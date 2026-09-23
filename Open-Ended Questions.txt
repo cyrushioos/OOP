@@ -1,0 +1,13 @@
+MP1
+1. The scores array should be private so only the Student class can control and validate access to a student’s scores.
+2. this.studentID = studentID distinguishes the current object’s studentID field from the constructor parameter with the same name.
+3. A Student[] lets MP1 store and process multiple student objects efficiently using loops instead of separate variables.
+4. If the passing grade changes to 80, update the comparison in Student.getStatus() because that method contains the class’s passing rule.
+
+MP10
+1. Enrollment should be its own class because it represents the many-to-many relationship between a Student and a Course.
+2. The grade and enrollment status belong to Enrollment because they describe a student’s participation in a specific course.
+3. MP10 determines whether a course is full by counting its existing Enrollment objects and comparing the count with course.getCapacity().
+4. To support retakes, Enrollment should include a term or attempt number, and duplicate checking should allow the same student and course in different terms.
+5. The UML relationship is Student 1 — 0..* Enrollment 0..* — 1 Course, meaning each enrollment has one student and one course while each student or course can have many enrollments.
+
